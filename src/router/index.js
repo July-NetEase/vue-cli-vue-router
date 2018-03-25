@@ -16,12 +16,11 @@ export default new Router({
     },
     { //增加一个hi的路由和页面
       path: '/hi',
-      name: 'Hi',
       component: Hi,
       children:[
-        {path:'/',component:Hi},
-        {path:'hi1',component:Hi1},
-        {path:'hi2',component:Hi2},
+        {path:'/',name:'Hi',component:Hi},
+        {path:'hi1',name:'hi1',component:Hi1},
+        {path:'hi2',name:'Hi/Hi2',component:Hi2},
       ]
     }
   ]

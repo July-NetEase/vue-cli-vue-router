@@ -4,9 +4,10 @@
     <p>导航：
       <router-link to="/">首页</router-link>
       <router-link to="/hi">Hi</router-link>
-      <router-link to="/hi/hi1">Hi子页面1</router-link>
+      <router-link :to="{name:'hi1',params:{username:'July'}}">Hi子页面1</router-link>
       <router-link to="/hi/hi2">Hi子页面2</router-link>
     </p>
+    <p>{{$route.name}}</p>
     <router-view/>
   </div>
 </template>
